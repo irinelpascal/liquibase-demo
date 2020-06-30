@@ -1,5 +1,4 @@
-package dto;
-
+package com.example.liquibasedemo.model;
 
 public class PersonCreateDTO {
 
