@@ -11,6 +11,6 @@ public interface PersonRepository extends CrudRepository<PersonEntity, UUID> {
     @Query("select p.name from PersonEntity p where p.name = :personName")
     String findByName(String personName);
 
-    @Query("update employees set updatedAt = 'now()' where id =:employeeId")
+    @Query("update PersonEntity set updatedAt = 'now()' where id =:employeeId")
     void updatePerson(UUID employeeId);
 }

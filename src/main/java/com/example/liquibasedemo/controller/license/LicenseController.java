@@ -49,7 +49,7 @@ public class LicenseController {
                     .build();
             licenseEntity.setCreatedOn(new Timestamp(System.currentTimeMillis()));
             foundPersonEntity.setUpdatedAt(new Timestamp(System.currentTimeMillis()));
-            personRepository.updatePerson(foundPersonEntity.getId());
+            personRepository.updatePerson(foundPersonEntity.getId()); //updated the updatedAt column
             LicenseEntity createdLicenseEntity = licenseRepository.save(licenseEntity);
             if (createdLicenseEntity != null) {
                 LOGGER.info("License with id: " + createdLicenseEntity.getId() + " has been created");
