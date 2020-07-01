@@ -5,14 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="Irinel">
-        <addColumn schemaName="public" tableName="employees">
-            <column name="isActive" type="boolean" valueBoolean="true"/>
-        </addColumn>
+    <changeSet id="34" author="Irinel">
+        <addNotNullConstraint schemaName="public" tableName="employees" columnName="is_active"/>
     </changeSet>
-
-    <changeSet id="2" author="Irinel">
-        <renameColumn schemaName="public" tableName="employees" oldColumnName="isActive" newColumnName="is_active"/>
-    </changeSet>
-
 </databaseChangeLog>

@@ -6,13 +6,9 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet id="1" author="Irinel">
-        <addColumn schemaName="public" tableName="employees">
-            <column name="isActive" type="boolean" valueBoolean="true"/>
-        </addColumn>
+        <update schemaName="public" tableName="employees">
+            <column name="income" value="4500"></column>
+            <where>income = 'null'</where>
+        </update>
     </changeSet>
-
-    <changeSet id="2" author="Irinel">
-        <renameColumn schemaName="public" tableName="employees" oldColumnName="isActive" newColumnName="is_active"/>
-    </changeSet>
-
 </databaseChangeLog>

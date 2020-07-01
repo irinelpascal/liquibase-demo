@@ -21,11 +21,22 @@ public class PersonEntity extends AbstractEntity {
     @Column(name = "income")
     private String income;
 
+    @Column(name = "is_active")
+    private boolean isActive;
+
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "personEntity")
     private Collection<LicenseEntity> licenseEntities;
 
     public Collection<LicenseEntity> getLicenseEntities() {
         return licenseEntities;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 
     public void setLicenseEntities(Collection<LicenseEntity> licenseEntities) {
