@@ -18,4 +18,11 @@
             <where>income = '2550 euro'</where>
         </update>
     </changeSet>
+
+    <changeSet id="37" author="Irinel">
+        <update schemaName="public" tableName="employees">
+            <column name="is_active" value="true"></column>
+            <where>is_active = 'true'</where>
+        </update>
+    </changeSet>
 </databaseChangeLog>

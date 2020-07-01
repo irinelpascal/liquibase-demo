@@ -110,6 +110,7 @@ public class PersonEntity extends AbstractEntity {
             person.setHeight(this.height);
             person.setIncome(this.income);
             person.setLicenseEntities(this.licenseEntities);
+            person.setActive(true);
             return person;
         }
     }

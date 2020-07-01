@@ -9,8 +9,9 @@ public class LicenseCreateDTO implements Serializable {
 
     @NotBlank(message = "License name cannot be empty")
     private String licenseName;
+
     @NotBlank(message = "You have to add an id of a person")
-    private UUID personEntityId;
+    private String personEntityId;
 
     public String getLicenseName() {
         return licenseName;
@@ -20,12 +21,11 @@ public class LicenseCreateDTO implements Serializable {
         this.licenseName = licenseName;
     }
 
-    public UUID getPersonEntityId() {
+    public String getPersonEntityId() {
         return personEntityId;
     }
 
-    public void setPersonEntityId(UUID personEntityId) {
+    public void setPersonEntityId(String personEntityId) {
         this.personEntityId = personEntityId;
     }
-
 }

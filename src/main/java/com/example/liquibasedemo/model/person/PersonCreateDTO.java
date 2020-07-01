@@ -8,7 +8,9 @@ public class PersonCreateDTO implements Serializable {
 
     @NotBlank(message = "Name of the person cannot pe empty")
     private String name;
+
     private String height;
+
     @NotBlank(message = "The income cannot pe empty")
     private String income;
 

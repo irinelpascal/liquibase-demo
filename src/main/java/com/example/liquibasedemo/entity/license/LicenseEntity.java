@@ -2,7 +2,6 @@ package com.example.liquibasedemo.entity.license;
 
 import com.example.liquibasedemo.entity.AbstractEntity;
 import com.example.liquibasedemo.entity.person.PersonEntity;
-import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
