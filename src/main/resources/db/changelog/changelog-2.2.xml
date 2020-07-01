@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="Mai marele Boss">
+        <update schemaName="public" tableName="employees">
+            <column name="income" value="2000 euro"/>
+            <where>name = 'Irinel Pascal'</where>
+        </update>
+    </changeSet>
+
+    <changeSet id="2" author="Mai marele Boss">
+        <update schemaName="public" tableName="employees">
+            <column name="income" value="2400 euro"/>
+            <where>name = 'Tansanu Florin-Lucian'</where>
+        </update>
+    </changeSet>
+
+    <changeSet id="3" author="Mai marele Boss">
+        <update schemaName="public" tableName="employees">
+            <column name="income" value="2550 euro"/>
+            <where>name = 'Tansanu Florin-Lucian'</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>
